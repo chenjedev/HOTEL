@@ -55,18 +55,18 @@
         </div>
 
         <div class="hero-form">
-             <form class="booking" id="book">
-               <input type="text" placeholder="Your Name" required>
-               <input type="email" placeholder="Your Email" required>
-               <input type="tel" placeholder="Phone Number" required>
-               <select required>
+             <form class="booking" id="book" name="booking" action="contact.php" method="POST">
+               <input type="text" name="name" placeholder="Your Name" required>
+               <input type="email" name="email"  placeholder="Your Email" required>
+               <input type="tel" name="phone" placeholder="Phone Number" required>
+               <select required name="guest">
                 <option value="">Guest</option>
                 <option value="1">1 Person</option>
                 <option value="2">2 Peoples</option>
                 <option value="3">3 Peoples</option>
                 <option value="4">4 Peoples</option>
                </select>
-               <select required>
+               <select required name="class">
                 <option value="">Room Class</option>
                 <option value="1">Executive</option>
                 <option value="2">Popular</option>
@@ -74,10 +74,10 @@
                 <option value="4">Family</option>
                 <option value="4">Bussines</option>
                </select>
-               <input type="date" placeholder="Date" required>
-               <input type="time" placeholder="Time" required>
-               <textarea placeholder="Special request..."></textarea>
-               <button type="submit">Reserve Now</button>
+               <input type="date" name="date" placeholder="Date" required>
+               <input type="time" name="time" placeholder="Time" required>
+               <textarea name="request" placeholder="Special request..."></textarea>
+               <button type="submit" name="submit" >Reserve Now</button>
              </form>
         </div>
     </section>
