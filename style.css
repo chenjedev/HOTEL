@@ -3437,6 +3437,28 @@ section{
     }
 }
 
+/* desktop hero: content + form in one flex row */
+@media (min-width: 1025px){
+    .hero{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 24px !important;
+    }
+
+    .hero-contents,
+    .hero-form{
+        flex: 1 1 0 !important;
+        max-width: 50% !important;
+    }
+
+    .hero-form{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
 /* mobile only: center all footer content */
 @media (max-width: 767.98px){
     .footer .logo,
